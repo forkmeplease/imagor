@@ -32,7 +32,7 @@ func (v *Processor) Process(
 	ctx context.Context, blob *imagor.Blob, p imagorpath.Params, load imagor.LoadFunc,
 ) (*imagor.Blob, error) {
 	var (
-		thumbnailNotSupported bool
+		thumbnailNotSupported = true
 		upscale               = true
 		stretch               = p.Stretch
 		thumbnail             = false
